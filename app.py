@@ -1,14 +1,23 @@
 from flask import Flask, request, jsonify, render_template
 import openai
 from openai import OpenAI
-from dotenv import dotenv_values
+from dotenv import dotenv_values, load_dotenv, find_dotenv
+import os
 import json
 import re
 
-# Load configuration and set API key
-config = dotenv_values('.env')
+# Load environment variables from .env file in development
+load_dotenv(find_dotenv())
 
-client = OpenAI(api_key=config["OPENAI_API_KEY"])
+# Load configuration and set API key
+openai_api_key = os.getenv('OPENAI_API_KEY')
+if not openai_api_key:
+    # Fallback to .env file if the environment variable is not set
+    from dotenv import dotenv_values
+    config = dotenv_values('.env')
+    openai_api_key = config["OPENAI_API_KEY"]
+
+client = OpenAI(api_key=openai_api_key)
 
 app = Flask(__name__, template_folder='templates', static_url_path='', static_folder='static')
 
