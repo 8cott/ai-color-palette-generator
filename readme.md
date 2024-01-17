@@ -4,7 +4,7 @@
 ![OpenAI Version](https://img.shields.io/badge/openai-gpt--3.5--turbo-orange.svg)
 
 ## Live Website
-[Visit the App](http://8cott.pythonanywhere.com/){:target="_blank"}
+Check out the live demo of the Real Estate Listings App [here](http://8cott.pythonanywhere.com/).
 
 This web application uses OpenAI's GPT-3.5-Turbo to generate color palettes based on user-provided descriptions, moods, themes, or brands. Users can input their requirements, and the AI-powered assistant will provide color palettes in response.
 
