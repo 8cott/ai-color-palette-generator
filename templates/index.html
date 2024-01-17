@@ -29,5 +29,16 @@
       <div class="container"></div>
     </div>
     <script src="app.js"></script>
+    <footer>
+      <p class="footer-content">
+        © <span id="year"></span> Scott Rubin | Powered by
+        <a href="https://openai.com" target="_blank" rel="noopener noreferrer"
+          >OpenAI's GPT-3.5-Turbo</a
+        >
+      </p>
+    </footer>
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
   </body>
 </html>
