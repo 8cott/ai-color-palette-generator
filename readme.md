@@ -1,5 +1,22 @@
 # Color Palette Generator
-[![Python Version](https://img.shields.io/badge/Python-3.9%2B-brightgreen.svg)](https://www.python.org/downloads/)
-[![Flask Version](https://img.shields.io/badge/Flask-2.0%2B-blue.svg)](https://flask.palletsprojects.com/)
+![Python Version](https://img.shields.io/badge/python-3.x-blue.svg)
+![Flask Version](https://img.shields.io/badge/flask-2.x-green.svg)
+![OpenAI Version](https://img.shields.io/badge/openai-gpt--3.5--turbo-orange.svg)
 
-This app generates colors palettes using OpenAI's GPT-3.5-Turbo API based on user input. 
+## Live Website
+[Visit the App](http://8cott.pythonanywhere.com/){:target="_blank"}
+
+This web application uses OpenAI's GPT-3.5-Turbo to generate color palettes based on user-provided descriptions, moods, themes, or brands. Users can input their requirements, and the AI-powered assistant will provide color palettes in response.
+
+## Features
+
+- Generate color palettes from textual descriptions.
+- Responsive web interface.
+- Easy deployment on PythonAnywhere.
+
+## Technologies Used
+
+- Python 3.x
+- Flask 2.x
+- OpenAI's GPT-3.5-Turbo
+- HTML, CSS, and JavaScript
